@@ -1,11 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   background-color: #fafafa;
 }
 
 #primary-heading {
   color: blue;
+  border: 14px solid red;
+  border-radius: 8px;
+  padding: 8px;
 }
 
 .headings {
   font-family: Arial;
+}
+
+.wrapper {
+  display: flex;
+  gap: 16px;
+
+  width: 900px;
+  margin: auto;
+}
+.image {
+  width: 200px;
+  height: 150px;
+
+  background-color: gray;
+}
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  width: 200px;
+}
+.arrow {
+  margin: auto;
+
+  font-size: 32px;
+  font-weight: bold;
+}
+.thing {
+  width: 800px;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
