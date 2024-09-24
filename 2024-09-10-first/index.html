@@ -5,15 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Happy Construction LLC.</title>
+
+    <link rel="stylesheet" href="./css/style-tutorial.css">
   </head>
   <body>
-    <!-- This is a comment in HTML 5. -->
+    <header>
+      <!-- This is a comment in HTML 5. -->
+  
+      <h1 id="primary-heading" class="headings">Hello from the other side.</h1>
+      <h2 class="headings">This is my subtitle.</h2>
 
-    <h1>Hello from the other side.</h1>
-    <h2>This is my subtitle.</h2>
+      <!-- nav menu -->
+       <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#menu-item-about">About</a></li>
+          <li><a href="./html/semantic-html-example.html">Product</a></li>
+          <li>Contact</li>
+        </ul>
+       </nav>
+    </header>
+    <main>
+      
+    </main>
+    <footer></footer>
+    
 
     <!-- div for overview -->
-     <div>
+     <div class="container">
       <h3>Overview</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo vel neque aspernatur sed aliquam ipsum laboriosam consequatur esse! Commodi, iure voluptas ad aut suscipit reprehenderit fuga! Quam obcaecati quibusdam deserunt.</p>
     </div>
@@ -41,7 +60,7 @@
 
     <br />
     
-    <ul>
+    <ul id="menu-item-about">
       <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, aliquam incidunt! Necessitatibus, iusto et ea eum aspernatur dolore, velit, asperiores nostrum porro quis non corrupti placeat temporibus obcaecati veritatis labore!</li>
       <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, aliquam incidunt! Necessitatibus, iusto et ea eum aspernatur dolore, velit, asperiores nostrum porro quis non corrupti placeat temporibus obcaecati veritatis labore!</li>
       <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, aliquam incidunt! Necessitatibus, iusto et ea eum aspernatur dolore, velit, asperiores nostrum porro quis non corrupti placeat temporibus obcaecati veritatis labore!</li>
@@ -51,5 +70,83 @@
     <hr />
 
     <span><a href="http://oakland.edu">Click here</a> to visit oakland university web page.</span>
+
+    <audio src="../assets/audio/file_example_MP3_2MG.mp3">
+      Your browser does not support the video format.
+    </audio>
+    <video src="" controls loop></video>
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>First</th>
+          <th>Last</th>
+          <th>GPA</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Wick</td>
+          <td>3.79</td>
+        </tr>
+        <tr>
+          <td>Jane</td>
+          <td>Doe</td>
+          <td>3.89</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>GPA Average</td>
+          <td></td>
+          <td>3.84</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <form action="#" method="get">
+      <label for="user-email">Enter your email: </label>
+      <input type="email" name="user-email" id="user-email" />
+      <br />
+      <label for="user-password">Enter your password: </label>
+      <input type="password" name="user-password" id="user-password" />
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+
+    <section class="input-tutorials">
+      <p>Select favorite pet:</p>
+      <input type="radio" name="pet" id="cats">
+      <label for="cats">Cats</label>
+      <br />
+      <input type="radio" name="pet" id="dogs">
+      <label for="dogs">Dogs</label>
+      <br />
+      <input type="radio" name="pet" id="fish">
+      <label for="fish">Fish</label>
+    </section>
+
+    <section class="input-tutorials"></section>
+      <p>Select programming languages:</p>
+      <input type="checkbox" name="java" id="java" value="java">
+      <label for="java">Java</label>
+      <br />
+      <input type="checkbox" name="cpp" id="cpp" value="cpp">
+      <label for="cpp">C++</label>
+      <br />
+      <input type="checkbox" name="python" id="python" value="python">
+      <label for="python">Python</label>
+
+      <br/>
+      <br/>
+
+      <label for="states">Select state</label>
+      <select name="states" id="states">
+        <option value="MI">Michigan</option>
+        <option value="IL">Illinois</option>
+        <option value="OHIO">Ohio</option>
+      </select>
+    </section>
   </body>
 </html>
